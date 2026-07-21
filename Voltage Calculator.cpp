@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+double calculateVoltage(double current, double resistance)
+{
+    return current * resistance;
+}
+
+int main()
+{
+    double current;
+    double resistance;
+
+    cout << "Enter current and resistance: ";
+    cin >> current >> resistance;
+
+    double voltage = calculateVoltage(current, resistance);
+
+    cout << "Total Voltage: " << voltage << " V";
+
+    return 0;
+}
